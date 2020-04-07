@@ -5,6 +5,30 @@ import java.util.List;
 public class Client {
 	
 	
+	String elegibility;
+	
+	List<String> invoces;
+	
+	
+	
+	
+	
+	public String getElegibility() {
+		return elegibility;
+	}
+
+	public void setElegibility(String elegibility) {
+		this.elegibility = elegibility;
+	}
+
+	public List<String> getInvoces() {
+		return invoces;
+	}
+
+	public void setInvoces(List<String> invoces) {
+		this.invoces = invoces;
+	}
+
 	String name;
 	
 	String matricule;

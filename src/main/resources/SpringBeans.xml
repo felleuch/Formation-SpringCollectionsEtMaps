@@ -3,7 +3,25 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
+
+
+<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location">
+			<value>application.properties</value>
+		</property>
+	</bean>
+
 <bean id="clientBean"   class="com.test.Client"  >
+	<property name="elegibility"  value="${client.elegibility}"  />
+	
+	<property name="invoces">
+			<list>
+				<value>inv01</value>
+				<value>inv02</value>
+				<value>inv03</value>
+			</list>
+	</property>
+	
 	<property name="name"  value="toto"  />
 	<property name="orders">
 			<list>
